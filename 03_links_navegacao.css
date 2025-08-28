@@ -1,1 +1,54 @@
-/* Digitação (Aqui) */
+body {
+    font-family: 'Segoe UI';
+    line-height: 1.6;
+    margin: 20px;
+    /*background: linear-gradient(45 dreg, green, #fff);*/
+    background: radial-gradient(circle, yellow, purple);
+    /* background: conic-gradient(red, #fff); */
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase; /*deixa tudo maiusculo*/
+    color: orange;
+    letter-spacing: 10px;
+}
+
+/* Links - Estado e pseudo-classes*/
+
+a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:link{
+    color: red;
+}
+
+a:hover{
+    background-color: rgb(235, 60, 130);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Estilo de classe link-topo*/
+.link-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(6, 6, 71, 0.395);
+    color: rgba(0, 255, 255, 0.256);
+    padding: 10px;
+    border-radius: 50%  ;
+}
+
+a:visited{
+    color: green;
+}
+
+
+
+
+
+
+

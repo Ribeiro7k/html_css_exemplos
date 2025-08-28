@@ -1,1 +1,14 @@
-/* Digitação (Aqui) */
+h1 {
+    /* offset-x  offset-y  blur  color */
+    text-shadow: 2px 2px 2px black;
+}
+img {
+    border: 3px solid red;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: rotate(70deg);
+    border-color: rgb(98, 0, 255);
+
+}
