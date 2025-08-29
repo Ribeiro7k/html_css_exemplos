@@ -1,14 +1,25 @@
-h1 {
-    /* offset-x  offset-y  blur  color */
-    text-shadow: 2px 2px 2px black;
+h1{
+    /*      Offset-x    offset-y    blur    color*/
+    text-shadow: 5px 2px 5px #000000;
+    
 }
-img {
+
+img{
+    transform: rotateY(-45deg);
+    border-radius: 5px ;
     border: 3px solid red;
-    border-radius: 50px;
-    transition: transform 0.3s;
+    transition: transform 0.8;
 }
-img:hover {
-    transform: rotate(70deg);
-    border-color: rgb(98, 0, 255);
+
+img:hover{
+    transform: translateY(-20px);
+    border-color: blue;
+    opacity: 0.3;
+}
+
+.img-link{
+    width: 150px;
+    height: 50px;
+    object-fit: contain; /*Mantem a proporção da imagem*/
 
 }

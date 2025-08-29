@@ -1,117 +1,87 @@
-/* === DESAFIO GAMEZONE RETRO - ESTILO 8-BIT === */
+/* === ESTILIZANDO TABELAS === */
 
-/* FONTE PIXELADA DO GOOGLE FONTS (adicionar no html se quiser) */
 body {
-    font-family: 'Courier New', monospace;
-    background: linear-gradient(180deg, #0f0f23 0%, #1a1a3e 100%); 
-    color: #fff;
-    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f5f5f5;
     padding: 20px;
-    min-height: 100vh;
 }
 
-/* Título com efeito neon/arcade */
-.titulo-principal {
+h1 {
+    color: #2c3e50;
     text-align: center;
-    font-size: 48px;
-    color: #ff00ff;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
-    animation: piscar 2s infinite;
-    margin: 20px 0;
 }
 
-@_k.ribeiro07 piscar {
-    0%, 100% { opacity: 1;}
-    50% { opacity: 0.8; }
+h2 {
+    color: #34495e;
+    margin-top: 30px;
 }
 
-.subtitulo {
-    text-align: center;
-    color: #00ffff;
+/* === Estilo base para todas as tabelas === */
+
+/* Continuar digitação (Aqui) */
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgb(0,0,0,0,1);
+}
+
+.tabela-produtos {
+    border: 2px solid blueviolet;
+
+}
+
+.tabela-produtos thead{
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.tabela-produtos th,
+.tabela-produtos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f5f5f5;
+}
+/*zebrado   */
+.tabela-produtos tbody tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+/*zebrado em linhas impares*/
+.tabela-produtos tbody tr:nth-child(odd){
+    background-color: #999;
+}
+
+/*hover em linhas de tabela*/
+
+.tabela-produtos tbody tr:hover{
+    background-color: #d7e6e4;
+    cursor: pointer;
+}
+
+/*___________________________________________________*/
+/*estilos da tabela*/
+
+.tabela-vendas{
+    border: 1px solid rgb(8, 209, 75);
+
+}
+
+.tabela-vendas th {
+    border: 1px solid rgb(8, 209, 75);
+    padding: 10px;
+    color: #ff0000;
     font-size: 18px;
 }
-
-/* Navegação estilo arcade */
-.navegação {
-     text-align: center;
-     margin: 30px 0;
-}
-
-.navegação a {
-    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-    color: #000;
-    padding: 10px 20px;
-    margin: 0 10px;
-    text-decoration: none;
-    border-radius: 5px;
+.valor {
+    text-align: right; /*Texto alinhado a direita*/
     font-weight: bold;
-    display: inline-block;
-    transition: transform 0.2s;
+    color: #34495e;
 }
 
-.navegação a:houver {
-    transform: scale(1.1) rotate(-2deg);
+.total {
+    background-color: rgb(255, 208, 0);
+    font-weight: bold; /*Negrito*/
 }
-
-/* Banner com borda pixelada */
-.banner-principal {
-    display: block;
-    margin: 20px auto;
-    width: 250px;
-    height: 120px;
-    border: 4px solid #00ff00;
-    box-shadow: 0 0 20px #00ff00;
-}
-
-/* Títulos de seção */
-.titulo-secao {
-    color: #ffff00;
-    border-bottom: 3px dashed #ff00ff;
-    padding-bottom: 10px;
-}
-
-/* Lista de consoles estilo retro */
-.lista-consoles {
-    background: rgba(0,0,0,0.5);
-    padding: 20px;
-    border: 2px solid #00ffff;
-    list-style: none;
-}
-
-.lista-consoles li::before {
-    content:"➤ ";
-    color: #00ff00;
-}
-
-/* Tabela estilo arcade */
-.tabela-precos {
-    width: 100%;
-    border-collapse: collapse;
-    background: rgba(0,0,0,0.7);
-    margin: 20px 0;
-}
-
-.tabela-precos th {
-    background: linear-gradient(90deg, #ff00ff #00ffff);
-    color: #000;
-    padding: 10px;
-}
-
-.tabela-precos td {
-    border: 1px solid #00ff00;
-    padding: 10px;
-}
-
-.preço {
-    color:#00ff00
-    font-weight: bold;
-    text-align: right;
-}
-
-/* Rodapé */
-.rodape {
-    text-align: center;
-    color: #888;
-    margin-top: 50px;
-    font-size: 14px;
-}    
